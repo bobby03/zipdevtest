@@ -11,7 +11,11 @@ class Contacts {
     $this->connection = $connection;
   }
 
-  public function getContacts( $id = null ){
+  public function create() {
+
+  };
+
+  public function read( $id = null ){
 
     $query = "SELECT * FROM " . $this->$table_name;
 
@@ -27,5 +31,12 @@ class Contacts {
     return $stmt;
   }
 
+  public function update() {
+
+  };
+
+  public function delete() {
+
+  };
 }
 ?>
